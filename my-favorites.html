@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>My Favorites (w/Bootstrap)</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--loading my stylesheet last to override some o the bootstrap styles-->
+    <link rel="stylesheet" href="CSS-MyFavorites.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="jumbotron" id="images">
+                <br />
+                <br />
+                <h1>some of my <br />
+                <span id="specialFont">FAVORITE</span> things <span class="glyphicon glyphicon-thumbs-up"></span></h1>
+            </div>
+        </div>
+
+        <div class="row" id="pill-container">
+ 
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#penguins" aria-controls="penguins" role="tab" data-toggle="tab">Movie</a></li>
+                <li role="presentation"><a href="#polarbears" aria-controls="polarbears" role="tab" data-toggle="tab">Artist</a></li>
+                <li role="presentation"><a href="#seals" aria-controls="seals" role="tab" data-toggle="tab">Foods</a></li>
+                <li role="presentation"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Photos</a></li>
+                <li role="presentation"><a href="#books" aria-controls="books" role="tab" data-toggle="tab">Books</a></li>
+                <li role="presentation"><a href="#program" aria-controls="program" role="tab" data-toggle="tab">Program</a></li>
+            </ul>
+
+                <!-- The tab panes for each pill. Bootstrap's JavaScript uses the attributes of the
+    li elements to display the correct tab panel when a pill is clicked.  -->
+
+            <div class="tab-content">
+
+                <!--Movie-->
+                <div role="tabpanel" class="tab-pane active" id="penguins">
+                    <h2 class="section-header">Favorite Movie</h2>
+
+                    <p><span id="favorite-movie">Pump Up the Volume</span></p>
+
+                    <p>
+                        This movie stars a young Christian Slater playing a teenage pirate radio DJ, before the internet age. The soundtrack is amazing and the content
+                        is thoughtful, provoking, and still rings true to the struggles of today that we face as a culture and in our formative years as human beings.
+                        <br /><br />
+                        <a href="https://en.wikipedia.org/wiki/Pump_Up_the_Volume_(film)" target="_blank">Read more here</a>
+                    </p>
+                </div>
+                <!--Artist-->
+                <div role="tabpanel" class="tab-pane" id="polarbears">
+                    <h2 class="section-header">Favorite Artist</h2>
+
+                    <p>
+                        <b><span id="favorite-music-artist-name">Sarah Slean</span></b>
+                    </p>
+
+                    <p>
+                        A insightful and poetic singer/songwriter/composer from Canada.
+                        She writes all of her own music as well as orchestral arrangements.
+                        Her live performances are amazing!
+                        Her main instrument is the piano.
+                        <br /><br />
+                        <a href="http://sarahslean.com" target="_blank">Visit SarahSlean.com</a>
+                    </p>
+                </div>
+                <!--Food-->
+                <div role="tabpanel" class="tab-pane" id="seals">
+                    <h2 class="section-header">Favorite Foods</h2>
+                    <ul>
+                        <li id="most-favorite-food">Pizza</li>
+                        <li>Thai</li>
+                        <li>Mexican</li>
+                    </ul>
+                </div>
+                <!--Photos-->
+                <div role="tabpanel" class="tab-pane" id="photos">
+                    <h2 class="section-header">Favorite Photos</h2>
+                    <div id="favPhotos">
+                        <img src="images/favImg8.jpg" />
+                        <img src="images/favImg4.jpg" />
+                        <img src="images/favImg2.jpg" />
+                        <img src="images/favImg1.jpg" />
+                        <img src="images/favImg5.jpg" />
+                        <img src="images/favImg6.jpg" />
+                    </div>
+                </div>
+                <!--Books-->
+                <div role="tabpanel" class="tab-pane" id="books">
+                    <h2 class="section-header">Favorite Books</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th style="width:300px;">Author</th>
+                                <th style="width:300px;">Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Good Morning, Midnight</td>
+                                <td>Jean Rhyes</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Good_Morning,_Midnight_(Rhys_novel)" target="_blank">more info</a></td>
+                            </tr>
+                            <tr>
+                                <td>States of Consciousness</td>
+                                <td>Charles T. Tart</td>
+                                <td><a href="https://www.goodreads.com/book/show/715851.States_of_Consciousness" target="_blank">more info</a></td>
+                            </tr>
+                            <tr>
+                                <td>Views from the Real World</td>
+                                <td>G.I. Gurdjieff</td>
+                                <td><a href="https://www.amazon.com/Views-Real-World-G-Gurdjieff/dp/0140190643" target="_blank">more info</a></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <!--Program-->
+                <div role="tabpanel" class="tab-pane" id="program">
+                    <h2 class="section-header">Favorite Program</h2>
+                    <p>My favorite program that I have developed so far is an expense app for my work. You can view a detailed description <a href="lab2.html" target="_blank">here</a>.</p>
+                </div>
+
+            </div>
+        </div>
+        
+
+    </div>
+
+</body>
+</html>

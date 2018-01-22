@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+   <!--Specifying HTML 5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2 - part 1</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="lab2-stylesheet.css" />
+
+</head>
+
+<body>
+       
+    <div class="container">
+
+        <div class="row">
+
+            <div class="jumbotron">
+
+                <h1>Expense Summary Application</h1>
+                (developed a C# Windows form prototype for use at my work)
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-6">
+
+                <h2>Application Summary</h2>
+                <p>
+                    This application was developed for use at my place of work. They were using Excel spreadsheets to keep track of credit card expenses, and I proposed
+                    this project as a way to make that process more efficient. Not only did I get class credit, but I got to do the work for class mostly at work, getting paid for it.
+                </p>
+
+                <h2>Github Repo Link</h2>
+                <p>
+                    <a href="https://github.com/travelingspace/Expense-Summary-App/tree/master/Expense%20Summary%20App" target="_blank">click here</a>
+                </p>
+            </div>
+
+            <div class="col-sm-6">
+
+                <h2>Code Samples</h2>
+                <p>Database connection for project to local SQL database:</p>
+                <pre>
+                    <code>
+                        public static class ConnectionDB
+                        {
+
+                            public static SqlConnection GetConnection()
+                            {
+                                string connectionString =
+                                "Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|" +
+                                "\\ExpenseItems.mdf;Integrated Security=True";
+                                SqlConnection connection = new SqlConnection(connectionString);
+                                return connection;
+                            }
+                        }
+                    </code>
+                </pre>
+
+                <br />
+                <p>Expense Item Partial Class Using Form Passed Variables:</p>
+                <pre>
+                    <code>
+                        //***Constructor that takes 8 arguments to 
+                        //***assign all properties for Expense Item object.
+
+                        public ExpenseItem (string date1, 
+                            string description1, string miles1, 
+                            string expenseType1, string expenseCode1, 
+                            string rate1, string totalExpense1, 
+                            string mileageTotal1, 
+                            System.Drawing.Image receiptImage1)
+                        {
+                            date = date1;
+                            description = description1;
+                            miles = miles1;
+                            expenseType = expenseType1;
+                            expenseCode = expenseCode1;
+                            rate = rate1;
+                            totalExpense = totalExpense1;
+                            mileageTotal = mileageTotal1;
+                            receiptImage = receiptImage1;
+                        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

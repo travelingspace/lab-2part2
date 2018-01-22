@@ -1,0 +1,20 @@
+﻿.jumbotron{
+    background-color:dodgerblue;
+    color: white;
+    text-align:center;
+}
+
+.jumbotron h1 {
+    text-shadow: 2px 2px black;
+    font-family: 'Century Gothic';
+}
+
+h2 {
+    color:midnightblue;
+    font-family:'Century Gothic';
+}
+
+pre {
+    background-color:midnightblue;
+    color:whitesmoke;
+}
